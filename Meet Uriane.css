@@ -48,6 +48,7 @@ p a {
     from {
         width: 0
     }
+
     to {
         width: 25%
     }
@@ -57,10 +58,12 @@ p a {
 /* The typewriter cursor effect */
 
 @keyframes blink-caret {
+
     from,
     to {
         border-color: transparent
     }
+
     50% {
         border-color: none
     }
@@ -322,23 +325,30 @@ textarea {
 
 
 @media screen and (max-width: 750px) {
+
     .column,
     input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
+
     #navigation {
         display: inline-block;
         font-size: 15px;
     }
+
     .typewriter #logo h1 {
-       font-size: 36px;
+        font-size: 36px;
     }
-    #mainnav li{
-        display: inline-block;  }
+
+    #mainnav li {
+        display: inline-block;
+    }
+
     #mainnav li a {
         display: none;
     }
+
     .landing img {
         width: 99.5%;
     }
@@ -348,6 +358,7 @@ textarea {
     .centered-wrapper {
         width: 94% !important;
     }
+
     #navigation {
         display: none;
         width: 100%;

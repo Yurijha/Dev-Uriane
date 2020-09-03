@@ -7,9 +7,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
 
 body,
 p {
@@ -29,7 +26,6 @@ p a {
 
 .typewriter #logo h1 {
     float: left;
-    color: black;
     font-family: 'Lacquer', sans-serif;
     font-size: 36px;
     font-weight: 700;
@@ -141,7 +137,7 @@ h2 {
     width: 99.5%;
     height: 750px;
     overflow: hidden;
-    border-style: solid;
+    border: solid;
     border-width: 5px;
     border-radius: 5px;
     border-color: whitesmoke;
@@ -224,22 +220,6 @@ h2 {
     box-sizing: border-box;
 }
 
-.menu-icon {
-    display: none;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    background: url(https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/menu-24-32.png) left top no-repeat;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -ms-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    right: 0px;
-    top: 40px;
-    cursor: pointer;
-}
-
 .container {
     text-align: center;
 }
@@ -258,7 +238,7 @@ iframe {
 .thumbnail {
     position: relative;
     -ms-zoom: 0.50;
-    transorm: scale(0.50);
+    transform: scale(0.50);
     transform-origin: 0 0;
     -o-transform: scale(0.50);
     -o-transform-origin: 0 0;
@@ -349,19 +329,19 @@ textarea {
     }
 
     #mainnav li {
-        display: inline-block;
-    }
-
-    #mainnav li a {
         display: none;
     }
 
     .landing img {
         width: 99.5%;
     }
+
+    body{
+        margin: 0 auto;
+    }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     .centered-wrapper {
         width: 94% !important;
     }
@@ -375,6 +355,10 @@ textarea {
         z-index: 9999;
         margin-left: -3%;
         text-align: left;
+    }
+
+    .typewriter #logo h1 {
+        display: inline-block;
     }
 }
 

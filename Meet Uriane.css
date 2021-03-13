@@ -311,7 +311,7 @@ textarea {
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 815px) {
 
     .column,
     input[type=submit] {
@@ -326,6 +326,7 @@ textarea {
 
     .typewriter #logo h1 {
         font-size: 36px;
+        float: revert;
     }
 
     #mainnav li {
@@ -357,7 +358,7 @@ textarea {
     }
 
     .typewriter #logo h1 {
-        display: inline-block;
+        float: revert;
     }
 }
 

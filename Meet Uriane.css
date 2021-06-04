@@ -363,5 +363,7 @@ textarea {
 }
 
 footer {
+    background-color: slategrey;
+    color: whitesmoke;
     text-align: center;
 }

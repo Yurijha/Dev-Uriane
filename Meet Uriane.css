@@ -32,7 +32,7 @@ p a {
     color: darkcyan;
     overflow: hidden;
     padding: 0;
-    line-height: 100px;
+    line-height: 85px;
     height: 100px;
     /* Ensures the content is not revealed until the animation */
     border-right: .10em solid black;
@@ -103,7 +103,7 @@ h2 {
     display: block;
     margin-left: 0px;
     text-align: right;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 #mainnav {

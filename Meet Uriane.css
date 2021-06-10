@@ -27,7 +27,7 @@ p a {
 .typewriter #logo h1 {
     float: left;
     font-family: 'Lacquer', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     color: darkcyan;
     overflow: hidden;
@@ -326,7 +326,7 @@ textarea {
     }
 
     .typewriter #logo h1 {
-        font-size: 30px;
+        font-size: 25px;
         float: revert;
     }
 

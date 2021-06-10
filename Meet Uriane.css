@@ -32,7 +32,7 @@ p a {
     color: darkcyan;
     overflow: hidden;
     padding: 0;
-    line-height: 85px;
+    line-height: 80px;
     height: 100px;
     /* Ensures the content is not revealed until the animation */
     border-right: .10em solid black;
@@ -76,14 +76,14 @@ p a {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 26px;
     line-height: 42px;
     font-family: 'Archivo Black', sans-serif;
     font-weight: 400;
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 22px;
     line-height: 36px;
     font-family: 'Lacquer', sans-serif;
     font-weight: 300;
@@ -91,6 +91,7 @@ h2 {
 
 #header {
     height: 85px;
+    display: transparent;
     width: 100%;
     position: fixed;
     z-index: 10;
@@ -131,7 +132,7 @@ h2 {
 }
 
 .double-space {
-    height: 120px;
+    height: 80px;
 }
 
 .landing img {
@@ -143,6 +144,13 @@ h2 {
     border-radius: 5px;
     border-color: whitesmoke;
     border-right: 10px;
+}
+
+#uriane {
+    height:350px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: whitesmoke;
 }
 
 .section {
@@ -162,7 +170,11 @@ h2 {
     background-color: #fff;
 }
 
-#Services {
+#beyond-code {
+    background: url(https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?cs=srgb&dl=earth-lights-world-41949.jpg&fm=jpg) 50% 0 repeat fixed;
+}
+
+#about {
     background: url(https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?cs=srgb&dl=earth-lights-world-41949.jpg&fm=jpg) 50% 0 repeat fixed;
 }
 
@@ -190,7 +202,7 @@ h2 {
 }
 
 .section.lighter h2 {
-    color: darkcyan;
+    color: whitesmoke;
 }
 
 .section.lighter p {
@@ -210,6 +222,8 @@ h2 {
     background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    width: 50%;
+    margin-left: 25%;
 }
 
 .box {
@@ -238,7 +252,6 @@ iframe {
 
 .thumbnail {
     position: relative;
-    -ms-zoom: 0.50;
     transform: scale(0.50);
     transform-origin: 0 0;
     -o-transform: scale(0.50);
@@ -341,6 +354,11 @@ textarea {
     body{
         margin: 0 auto;
     }
+
+    .section .box {
+        width: 100%;
+        margin-left: revert;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -364,7 +382,20 @@ textarea {
 }
 
 footer {
-    background-color: slategrey;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: slategrey;
     text-align: center;
+    font-size: 15px;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Archivo Black", sans-serif;
+    margin: 5px;
+}
+
+footer a:hover {
+    color: slategrey;
 }

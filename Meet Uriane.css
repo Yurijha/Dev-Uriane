@@ -379,6 +379,9 @@ textarea {
     .typewriter #logo h1 {
         float: revert;
     }
+    .landing img {
+        height: 600px;
+    }
 }
 
 footer {

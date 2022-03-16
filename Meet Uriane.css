@@ -156,6 +156,7 @@ h2 {
     width: 1056px;
 }
 
+
 .section {
     height: 100%;
     overflow: hidden;
@@ -310,9 +311,15 @@ input {
     color: white;
 }
 
-#input-submit {
+button {
     font-size: 12px;
     font-weight: 500;
+    width: 100px;
+    color: whitesmoke;
+    border: solid;
+    border-radius: 5px;
+    border-color: darkslategrey;
+    background-color: black;
 }
 
 textarea {

@@ -1,232 +1,583 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-NRKLBSL');</script>
-        <!-- End Google Tag Manager -->
-
-        <!-- Include the Google Optimize script for A/B testing. -->
-        <script src="https://www.googleoptimize.com/optimize.js?id=OPT-TGJBWS5"></script>
-
-    <title>Dev Uriane</title>
-    
-    <!-- Link to Google Fonts used on website -->
-    <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet" type="text/css">
-    
-    <!-- Link to the CSS file for styling the website. -->
-    <link href="Meet Uriane.css" rel="stylesheet" type="text/css">
-    <link href="site-refresh.css" rel="stylesheet" type="text/css">
-    
-    <!-- Set character encoding for the website. -->
-    <meta charset="UTF-8">
-    
-    <!-- Set meta tags for search engine optimization -->
-    <meta name="copyright" content="Uriane Robinson, Dev Uriane"/>
-    <meta name="description" content="Dev Uriane is contract based Front-End Development by Uriane Robinson.  Uriane provides website development, cms development & management, SEO, and much more with digital marketing.  Do you have a project in mind?">
-    <meta name="author" content="Uriane Robinson">
-    <meta name="keywords" content="HTML, CSS, JavaScript, CMS, Seo, Sem, Digital marketing, Uriane Robinson, Uriane J Robinson, Uriane Justine Robinson">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Link to Javascript file for scripting the website. -->
-    <script src="Meet Uriane.js"></script>
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NRKLBSL');</script>
+    <!-- End Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNVWQ8LQB6"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-NNVWQ8LQB6');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NNVWQ8LQB6');
     </script>
-    </head>
-
-<body>
-    
+    <meta
+      name="description"
+      content="Uriane Robinson, the software engineer and digital marketer behind Dev Uriane. Explore work in web development, SEO, digital strategy, and creative technology."
+    />
+    <meta name="author" content="Uriane Robinson" />
+    <meta name="theme-color" content="#071719" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Uriane Robinson | Software Engineer &amp; Digital Marketer" />
+    <meta property="og:description" content="Engineering, digital strategy, analytics, business development, and creative technology—connected by systems thinking." />
+    <meta property="og:url" content="https://yurijha.github.io/Brittany/" />
+    <link rel="canonical" href="https://yurijha.github.io/Brittany/" />
+    <title>
+      Uriane Robinson | Software Engineer &amp; Digital Marketer | Dev Uriane
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Meet Uriane.css" />
+    <link rel="stylesheet" href="site-refresh.css" />
+    <style>
+      /* Match the About copy's 55% column start without moving the heading. */
+      #experience .section-head > .lede {
+        justify-self: start;
+        margin-left: 10%;
+        margin-right: 0;
+        text-align: left;
+        max-width: none;
+        width: 90%;
+      }
+      @media (max-width: 760px) {
+        #experience .section-head > .lede {
+          margin-left: 0;
+        }
+      }
+    </style>
+    <style>
+      .contact-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 8%;
+        align-items: start;
+      }
+      .contact-intro h2 {
+        font-size: clamp(38px, 4vw, 64px);
+        margin-bottom: 24px;
+      }
+      .contact-description {
+        max-width: 410px;
+        color: var(--soft);
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 0 0 24px;
+      }
+      .contact-email {
+        display: inline-block;
+        color: var(--cyan);
+        font-size: clamp(18px, 2vw, 26px);
+        overflow-wrap: anywhere;
+        border-bottom: 1px solid var(--cyan);
+        padding-bottom: 6px;
+      }
+      .contact-details {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 28px 40px;
+        margin: 38px 0 0;
+      }
+      .contact-details dt {
+        font:
+          10px "Space Mono",
+          monospace;
+        letter-spacing: 1.5px;
+        color: var(--cyan);
+        margin-bottom: 10px;
+      }
+      .contact-details dd {
+        margin: 0;
+        color: var(--soft);
+        font-size: 14px;
+        line-height: 1.7;
+      }
+      .contact-form {
+        min-width: 0;
+        background: var(--panel);
+        border: 1px solid var(--line);
+        padding: clamp(20px, 3vw, 36px);
+      }
+      .contact-fields {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 18px;
+      }
+      .contact-field {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 24px;
+        min-width: 0;
+      }
+      .contact-field label {
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .contact-field input,
+      .contact-field textarea {
+        width: 100%;
+        min-width: 0;
+        border: 1px solid #ffffff35;
+        border-radius: 0;
+        background: #071719;
+        color: var(--white);
+        padding: 14px;
+        font: inherit;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      .contact-field textarea {
+        resize: vertical;
+        min-height: 170px;
+      }
+      .contact-field input::placeholder,
+      .contact-field textarea::placeholder {
+        color: var(--soft);
+        opacity: 0.8;
+      }
+      .contact-field input:focus-visible,
+      .contact-field textarea:focus-visible,
+      .contact button:focus-visible,
+      .contact a:focus-visible {
+        outline: 2px solid var(--cyan);
+        outline-offset: 4px;
+      }
+      .contact-submit {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        align-items: center;
+      }
+      .contact-submit button {
+        border: 0;
+        cursor: pointer;
+        min-height: 48px;
+      }
+      .contact-submit button:hover {
+        background: #78e6e0;
+      }
+      .contact-submit p {
+        font-size: 12px;
+        line-height: 1.5;
+        color: var(--soft);
+        max-width: 200px;
+        margin: 0;
+      }
+      @media (max-width: 900px) {
+        .contact-layout {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+      }
+      @media (max-width: 480px) {
+        .contact-fields {
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+      }
+    </style>
+    <style>
+      .business-card {
+        grid-column: 2;
+      }
+      @media (max-width: 760px) {
+        .business-card {
+          grid-column: auto;
+        }
+      }
+      .mtm-visual {
+        overflow: hidden;
+        background: #071719;
+      }
+      .mtm-visual iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        background: #fff;
+        transform: scale(0.72);
+        transform-origin: top left;
+        width: 138.9%;
+        height: 138.9%;
+        pointer-events: none;
+      }
+      .mtm-visual::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, transparent 45%, #071719d9);
+        pointer-events: none;
+      }
+      .mtm-visual span,
+      .mtm-visual b {
+        z-index: 2;
+      }
+    </style>
+    <style>
+      .card-visual.ewb-photo {
+        isolation: isolate;
+      }
+      .ewb-photo img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 58%;
+        z-index: -2;
+      }
+      .ewb-photo::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          #07171955,
+          transparent 35%,
+          #071719b8
+        );
+        z-index: -1;
+      }
+    </style>
+    <style>
+      /* Frame the portrait around the face while retaining shoulders and upper arms. */
+      .card-visual.portrait {
+        background-position: center 8%;
+      }
+    </style>
+    <style>
+      .apparition-image .youtube-logo {
+        position: absolute;
+        left: 50%;
+        top: 46%;
+        transform: translate(-50%, -50%);
+        width: 88%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+        background: transparent;
+      }
+      @media (max-width: 760px) {
+        .apparition-image .youtube-logo {
+          max-height: none;
+          max-width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRKLBSL"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-        <header id="header">
-
-            <div class="centered-wrapper">
-
-                <div class="typewriter">
-
-                    <div id="logo" class="logo">
-                        <h1>Hello, I'm Uriane</h1>
-                    </div>
-                </div>
-
-                <div class="menu-icon"></div>
-
-                <nav id="navigation">
-
-                    <ul id="mainnav" class="sf-menu">
-
-                        <li><a href="#greeting">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#beyond-code">Business Development</a></li>
-                        <li><a href="about">About</a></li>
-                        <li><a href="contact">Contact</a></li>
-
-                    </ul>
-
-                </nav>
-
+    <a class="skip-link" href="#top">Skip to content</a>
+    <header class="topbar">
+      <a class="brand" href="#top">DEV <span>URIANE</span></a>
+      <nav id="primary-navigation" aria-label="Primary navigation">
+        <a href="#work">Work</a><a href="#about">About</a
+        ><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      </nav>
+      <a
+        class="resume"
+        href="https://raw.githubusercontent.com/Yurijha/Dev-Uriane/master/Uriane%20Robinson%20-%20Dev%20Uriane%20.pdf"
+        target="_blank"
+        rel="noopener"
+        >Résumé ↗</a
+      ><button class="menu" type="button" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false">☰</button>
+    </header>
+    <main id="top" tabindex="-1">
+      <section class="hero">
+        <div class="hero-art"></div>
+        <div class="hero-copy">
+          <p class="kicker">SOFTWARE / MARKETING / SYSTEMS</p>
+          <h1><span id="type-name">Uriane Robinson</span><i></i></h1>
+          <p class="intro">
+            I build digital experiences where engineering discipline meets
+            creative direction.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#work">Explore the work <span>↓</span></a
+            ><a class="text-link" href="#contact">Start a conversation ↗</a>
+          </div>
+        </div>
+        <div class="hero-meta">
+          <span>CHICAGO, IL</span><span>AVAILABLE FOR THE NEXT IDEA</span
+          ><span class="scroll-cue">SCROLL ↓</span>
+        </div>
+      </section>
+      <section id="work" class="work section">
+        <div class="section-head">
+          <p class="kicker">01 / SELECTED WORK</p>
+          <div class="work-heading">
+            <h2>
+              <span>Different disciplines.</span><em>One way of thinking.</em
+              ><small
+                >Turning complex problems into clear, useful experiences.</small
+              >
+            </h2>
+          </div>
+        </div>
+        <div class="cards">
+          <article class="card featured">
+            <div class="card-visual ewb-photo">
+              <img
+                src="assets/ewb-chicago-event.jpg"
+                alt="Uriane speaking with attendees at an EWB Chicago event"
+                loading="lazy"
+                width="1824"
+                height="1368"
+              /><span>01</span><b>EWB CHICAGO</b>
             </div>
-
-        </header>
-
-
-    <div id="wrapper">
-
-        <section id="greeting">
-
-            <div class="landing">
-
-                <img
-                    src="https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-                    alt="A scenic landscape photograph used as the homepage hero image">
-
+            <div class="card-info">
+              <p>Systems · Communications · Digital Strategy</p>
+              <h3>Engineering impact into a movement.</h3>
+              <a href="#contact">View the approach ↗</a>
             </div>
-
-        </section>
-
-
-       <section id="services" class="section darker">
-
-    <div class="double-space"></div>
-
-    <div class="centered-wrapper">
-
-        <h1><strong>Services</strong></h1>
-
-        <h2><strong>Web Development</strong></h2>
-          <i class="app-development.png"></i>        
-            <p class="box">
-            Crafting visually stunning, responsive websites that align with your brand's identity. Expertise includes HTML5, CSS3, JavaScript, React, CMS customization (WordPress, Shopify), and API integration for enhanced functionality.
-        </p>
-        
-        <br>
-            
-        <p class="box">
-            What You Get: A user-friendly, aesthetically pleasing website optimized for performance, accessibility, and scalability.
-        </p>
-
-        <h2><strong>Digital Marketing</strong></h2>
-        <p class="box">
-            Strategic campaigns that drive results. Services include SEO audits, paid ads, content strategy, email marketing campaigns, and analytics reporting to achieve measurable goals.
-        </p>
-        
-        <br>
-            
-        <p class="box">
-            What You Get: Targeted solutions to enhance your online presence, increase engagement, and drive business growth.
-        </p>
-
-        <h2><strong>UI/UX Design</strong></h2>
-        <p class="box">
-            User-centric interface design focusing on accessibility and usability. Wireframing, prototyping, and responsive designs ensure a seamless experience across devices.
-        </p>
-        
-        <br>
-            
-        <p class="box">
-            What You Get: Intuitive designs that delight users, enhance engagement, and reflect your brand identity.
-        </p>
-
-        <h2><strong>Business Development</strong></h2>
-        <p class="box">
-            Turning vision into reality through strategic planning, process optimization, and integration of digital solutions. Services focus on data-driven decision-making to capitalize on growth opportunities.
-        </p>
-            
-        <br>
-            
-        <p class="box">
-            What You Get: A partner in innovation helping you scale your business and achieve sustainable success.
-        </p>
-
-        <h2><strong>Maintenance and Support</strong></h2>
-        <p class="box">
-            Routine updates to ensure security, functionality, and compatibility. Troubleshooting, performance optimization, and ongoing marketing support are also included.
-        </p>
-            
-        <br>
-            
-        <p class="box">
-            What You Get: Peace of mind knowing your digital assets are consistently optimized and up-to-date.
-        </p>
-
-    </div>
-
-    <div class="double-space"></div>
-
-</section>
-
-        <section id="beyond-code" class="section lighter">
-
-            <div class="double-space"></div>
-
-            <div class="centered-wrapper">
-
-                <h1><strong>Development Beyond Coding</strong></h1>
-
-                <p class="box">While coding is the way to expand a company
-                    virtually whether it be with a website or an application, the core process is having space for ideas
-                    that can promote change and growth. A recent example of this is a website I put together for a company
-                    called <a href="https://eggharborcafe.com/">Egg Harbor Cafe</a>, which was simple but was only built
-                    to demonstrate the proposition of MTM (Multi-Team Membership) within the company itself. So, the
-                    website was merely a tool to present the information in an engaging manner so that strategy for a
-                    new company team to improve efficiency could grab the audiences attention.</p>
-
+          </article>
+          <article class="card">
+            <div class="card-visual portrait"><span>02</span></div>
+            <div class="card-info">
+              <p>Software</p>
+              <h3>Software that clarifies the signal.</h3>
+              <a href="#contact">Explore the work ↗</a>
             </div>
-
-            <div class="double-space"></div>
-
-            <div class="centered-wrapper">
-
-                <div class="thumbnail-container">
-
-                    <div class="thumbnail">
-
-                        <a href="https://yurijha.github.io/MTM-Egg-Harbor-Cafe/" id="MTM-Thumbnail">
-
-                            <iframe src="https://yurijha.github.io/MTM-Egg-Harbor-Cafe/" frameborder="0"
-                                onload="this.style.opacity = 1" title="MTM @ Egg Harbor Cafe"></iframe>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
+          </article>
+          <article class="card">
+            <div class="card-visual dark-grid apparition-image">
+              <span>03</span
+              ><img
+                class="youtube-logo"
+                src="assets/youtube-logo.png"
+                alt="YouTube"
+                width="320"
+                height="320"
+                loading="lazy"
+              /><b>APPARITION</b>
             </div>
-
-            <div class="double-space"></div>
-
-        </section>
-
+            <div class="card-info">
+              <p>Creative Technology · Content</p>
+              <h3>Designed gameplay. Designed attention.</h3>
+              <a href="#contact">See the thinking ↗</a>
+            </div>
+          </article>
+          <article class="card business-card">
+            <div class="card-visual mtm-visual">
+              <iframe
+                src="https://yurijha.github.io/MTM-Egg-Harbor-Cafe/"
+                title="MTM at Egg Harbor Cafe prototype"
+                loading="lazy"
+              ></iframe
+              ><span>04</span><b>MTM @ EGG HARBOR CAFE</b>
+            </div>
+            <div class="card-info">
+              <p>Business Development · Strategy · Prototyping</p>
+              <h3>Make the idea impossible to ignore.</h3>
+              <p>
+                A rapid interactive prototype created to present the Multi-Team
+                Membership concept to Egg Harbor Cafe. The simple site was a
+                visual conversation tool that helped communicate the opportunity
+                and support its implementation.
+              </p>
+              <a
+                href="https://yurijha.github.io/MTM-Egg-Harbor-Cafe/"
+                target="_blank"
+                rel="noopener"
+                >Open the prototype ↗</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="about" class="about section">
+        <div>
+          <p class="kicker">02 / ABOUT URIANE</p>
+          <h2>Curious about<br /><em>how things work.</em></h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            Hello, I’m Uriane Robinson—a software engineer and digital marketer
+            who enjoys working where structure, communication, and creative
+            problem-solving overlap.
+          </p>
+          <p>
+            My background spans web development, SEO, analytics, paid media, CMS
+            strategy, aerospace engineering, and community leadership through
+            Engineers Without Borders Chicago.
+          </p>
+          <p>
+            I’m not interested in making technology feel more complicated than
+            it needs to be. I like finding the signal, building the system, and
+            making the result useful to real people.
+          </p>
+          <div class="skills">
+            <span>FRONT-END</span><span>SEO & ANALYTICS</span
+            ><span>CONTENT SYSTEMS</span><span>ENGINEERING</span
+            ><span>PAID MEDIA</span><span>CREATIVE DIRECTION</span>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="experience section">
+        <div class="section-head">
+          <div>
+            <p class="kicker">03 / SELECTED ENVIRONMENTS</p>
+            <h2>Different rooms.<br /><em>Same systems mind.</em></h2>
+          </div>
+          <p class="lede">
+            A few of the teams and contexts that shaped how I work.
+          </p>
+        </div>
+        <div class="company-grid">
+          <div class="company">
+            <div class="company-mark ewb">EWB</div>
+            <div>
+              <b
+                >ENGINEERS WITHOUT BORDERS USA — CHICAGOLAND PROFESSIONAL
+                CHAPTER</b
+              ><span>President · Communications · Impact</span>
+            </div>
+          </div>
+          <div class="company">
+            <div class="company-mark c4">C·4</div>
+            <div>
+              <b>C-4 ANALYTICS</b
+              ><span>Digital marketing · Paid search · Reporting</span>
+            </div>
+          </div>
+          <div class="company">
+            <div class="company-mark milhouse">M</div>
+            <div>
+              <b>MILHOUSE ENGINEERING &amp; CONSTRUCTION</b
+              ><span>Web content · SEO · Analytics</span>
+            </div>
+          </div>
+          <div class="company">
+            <div class="company-mark whs">WHS</div>
+            <div>
+              <b>WORLD HAIR SYSTEM</b><span>Webmaster · Content marketing</span>
+            </div>
+          </div>
+          <div class="company">
+            <div class="company-mark whi">WHI</div>
+            <div>
+              <b>WORLD HAIR INSTITUTE</b
+              ><span>Webmaster · Content marketing</span>
+            </div>
+          </div>
+          <div class="company">
+            <div class="company-mark ankara">AM</div>
+            <div>
+              <b>ANKARA MEDIA</b><span>Digital media · Creative strategy</span>
+            </div>
+          </div>
+          <div class="company">
+            <div class="company-mark tony">TO</div>
+            <div>
+              <b>TONY ODISHO</b><span>Digital strategy · Web presence</span>
+            </div>
+          </div>
+          <div class="company">
+            <div class="company-mark sjobrand">SJB</div>
+            <div>
+              <b>SJOBRAND</b
+              ><span
+                >Website redevelopment · New company launch · Naming &amp; logo
+                design for eco-friendly polyurethane mold solutions</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact section">
+        <p class="kicker">04 / LET'S BUILD SOMETHING USEFUL</p>
+        <div class="contact-layout">
+          <div class="contact-intro">
+            <h2>Have a problem<br />worth solving?</h2>
+            <p class="contact-description">
+              Tell me about your project, your team, or the opportunity you have
+              in mind.
+            </p>
+            <dl class="contact-details">
+              <div>
+                <dt>BUSINESS HOURS</dt>
+                <dd>Monday–Saturday<br />1:30–8:00 pm CST</dd>
+              </div>
+              <div>
+                <dt>PHONE</dt>
+                <dd><a href="tel:+17088018855">(708) 801-8855</a></dd>
+              </div>
+              <div>
+                <dt>EMAIL</dt>
+                <dd><a href="mailto:devuriane@gmail.com">devuriane@gmail.com</a></dd>
+              </div>
+            </dl>
+          </div>
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/urianer2@outlook.com"
+            method="POST"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="contact-fields">
+              <div class="contact-field">
+                <label for="contact-name">Name</label
+                ><input
+                  id="contact-name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="contact-field">
+                <label for="contact-email">Email</label
+                ><input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="contact-field">
+              <label for="contact-message">Message</label
+              ><textarea
+                id="contact-message"
+                name="message"
+                rows="7"
+                placeholder="What would you like to work on together?"
+                required
+              ></textarea>
+            </div>
+            <div class="contact-submit">
+              <button class="button" type="submit">
+                Send message <span aria-hidden="true">↗</span>
+              </button>
+              <p>All fields required. The form is submitted through FormSubmit.</p>
+            </div>
+          </form>
+        </div>
         <footer>
-
-            <a href="index">Home</a>
-            <a href="about">About</a>
-            <a href="contact">Contact</a>
-
-            <br>
-
-
-            Copyright &copy 2026 <strong>Dev Uriane</strong> - All Rights Reserved.
-
+          <span>© 2026 DEV URIANE</span
+          ><span>DESIGNED &amp; BUILT WITH INTENT</span
+          ><a href="#top">BACK TO TOP ↑</a>
         </footer>
-
-</body>
-
-
+      </section>
+    </main>
+    <script src="Meet Uriane.js"></script>
+  </body>
 </html>
